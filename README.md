@@ -8,7 +8,7 @@ Training deep learning models requires lots of training data. Labelling data can
 
 The goal of this work was to adapt the proposed dense self-supervised learning method for semantic segmentation task. The key modification was increasing resolution of the output feature maps to have the same height and width as the input image thus preserving feature vector for every pixel. Pixel vector features are then used in linear evaluation by adding a logistic regression over it. If the pixel representations are good enough they can be easily separated and classified by the linear layer.
 
-![PixPro Modification Overview](pixpro/pixpro_files/img/pixpro_arch.PNG)
+![PixPro Modification Overview](/pixpro_files/img/pixpro_arch.PNG)
 
 Backbone network architecture was changed from ResNet-50 to UNet to keep the same resolution as the input image.
 
