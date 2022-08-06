@@ -28,9 +28,3 @@ Pixel-Propagation Module proposed in the original work includes calculating simi
 
 ![Local PPM](/pixpro_files/img/ppm.png)
 
-# Experiments
-Training and linear evaluation on semantic segmentation dataset Cityscapes
-
-# Visual representation
-Results of pixel retrieval
-
