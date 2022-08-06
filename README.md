@@ -14,7 +14,7 @@ Backbone network architecture was changed from ResNet-50 to UNet to keep the sam
 
 To make the larger resolution of the output feature maps possible, few modifications were made to be able to fit the available memory:
 
-- Positive Pixel Pairs
+- **Positive Pixel Pairs**
 
 Instead of computing the distances between every pixel of one feature map and every pixel of another feature map and then choosing positive pairs based on the computed distances, this work computes distances only for a small subset of pixels from the intersection of the two feature maps (as close pixels are sure to lie near intersection or to be in the intersection of two views). Distances are then used to form positive pairs and only a small subset is yet again taken.
 
@@ -22,7 +22,7 @@ Instead of computing the distances between every pixel of one feature map and ev
 
 All the following methods including positive pixel pairs are then modified to work only with those positive pairs.
 
-- Local PPM
+- **Local PPM**
 
 Pixel-Propagation Module proposed in the original work includes calculating similarity between pixel vector representations between every pixel pair of the feature map which is ambigious. To overcome this issue only local regions are used for calculating similarity and propagating features. This is motivated by the fact that pixels in local regions are more likely to have the same semantics.
 
